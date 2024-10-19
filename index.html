@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Colors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <button onclick="trocarCor('red')">Vermelho</button>
+        <button onclick="trocarCor('green')">Verde</button>
+        <button onclick="trocarCor('yellow')">Amarelo</button>
+        <button onclick="gerarCor()">Cor Aleatória</button>
+        <br>
+        <input type="text" id="color">
+        <button onclick="corPersonalizada()">Adicionar</button>
+        <input type="color" onchange="trocarCor(this.value)">
+        <br>
+        <input type="file" accept="image/*" id="image" onchange="adicionarImagem(this.files[0])">
+        <label for="image">Adicionar Imagem</label>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
